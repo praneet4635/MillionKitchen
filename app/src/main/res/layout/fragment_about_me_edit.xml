@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0532D"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="About Me"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_gravity="left|center_vertical"
+            android:drawableLeft="@drawable/back"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSizeMedium"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:background="@drawable/gray_btn_bg"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/save_btn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:background="@drawable/register_bg"
+                >
+                <ImageButton
+                    android:id="@+id/addDishButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_img"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:id="@+id/dishImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageButton
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit"
+                    android:background="@drawable/edit_btn_bg"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:alpha="0.7"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="About Me"
+                    android:background="@drawable/rounded_btn_fields"
+                    android:textSize="@dimen/textSizeMedium"
+                    android:padding="10dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:gravity="start"
+                    android:layout_margin="5dp"
+                    android:textColorHint="#BDBDBD" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

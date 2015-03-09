@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.t9l.millionkitchen.customwidgets.SlidingTabLayout-->
+        <!--android:id="@+id/sliding_tabs"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="#e25c38"-->
+        <!--android:padding="5dp"-->
+        <!--/>-->
+    <com.t9l.millionkitchen.customwidgets.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e25c38"
+        />
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliding_tabs"
+        tools:context=".ActivityUser"
+        android:fitsSystemWindows="true"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" >-->
+
+    <!--&lt;!&ndash;<android.support.v4.view.PagerTabStrip&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/pagerTabStrip"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="top"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#e25c38"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/viewpagertitlestrip"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--<com.t9l.millionkitchen.customwidgets.SlidingTabLayout-->
+    <!--android:id="@+id/pagerTabStrip"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="top"-->
+    <!--android:background="#e25c38"-->
+    <!--/>-->
+    <!--</android.support.v4.view.ViewPager>-->
+
+</RelativeLayout>

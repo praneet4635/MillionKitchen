@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="40dp"
+        android:id="@+id/swipe">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_dish_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/addDishBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="#ffffff"
+            android:text="ADD DISH"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/add_dish_btn"
+            android:drawablePadding="2dp"
+            android:background="@null" />
+    </LinearLayout>
+</RelativeLayout>

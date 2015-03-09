@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Million Kitchen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">972602122769603</string>
+    <string name="google_map_api_key">AIzaSyDdrtnfxhr4e9TpfLbTCNxwXA1VkLgiV0I</string>
+    <string name="change_photo">Change Photo</string>
+
+</resources>

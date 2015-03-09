@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    android:background="#F0EEE8"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <com.t9l.millionkitchen.customwidgets.CircularImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/itemImage"
+        android:src="@drawable/default_profile_pic"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/switchBtn"
+        android:switchMinWidth="50dp"
+        android:textOff=""
+        android:textOn=""
+        android:layout_centerVertical="true"
+        android:thumb="@drawable/custom_switch_selector"
+        android:track="@drawable/custom_switch"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/itemDetails"
+        android:layout_toRightOf="@id/itemImage"
+        android:layout_toLeftOf="@id/switchBtn"
+        android:layout_centerVertical="true"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:singleLine="true"
+            android:textColor="#4C4B4B"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_alignParentTop="true"
+            android:id="@+id/item_name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#A2A19F"
+            android:textSize="@dimen/textSizeMicro"
+            android:layout_below="@id/item_name"
+            android:id="@+id/item_quantity" />
+    </RelativeLayout>
+
+</RelativeLayout>

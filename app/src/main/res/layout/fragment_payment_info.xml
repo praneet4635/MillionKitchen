@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0532D"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Payment Information"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_gravity="left|center_vertical"
+            android:drawableLeft="@drawable/back"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true">
+
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/textSizeSmall"-->
+        <!--android:text="Cancel"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:background="@drawable/gray_btn_bg" />-->
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeSmall"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:background="@drawable/gray_btn_bg" />
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_below="@id/header"
+            android:layout_above="@id/bottomLayout"
+            android:layout_margin="10dp"
+            >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Acccount Holder's Name"
+                        android:background="@drawable/rounded_btn_fields"
+                        android:textSize="@dimen/textSizeMedium"
+                        android:padding="10dp"
+                        android:inputType="textPersonName"
+                        android:gravity="start"
+                        android:layout_margin="5dp"
+                        android:textColorHint="#BDBDBD"
+                        android:drawableLeft="@drawable/user_name"
+                        android:drawablePadding="10dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Account Number"
+                        android:background="@drawable/rounded_btn_fields"
+                        android:textSize="@dimen/textSizeMedium"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:gravity="start"
+                        android:layout_margin="5dp"
+                        android:textColorHint="#BDBDBD"
+                        android:drawableLeft="@drawable/user_name"
+                        android:drawablePadding="10dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="IFSC Code"
+                        android:background="@drawable/rounded_btn_fields"
+                        android:textSize="@dimen/textSizeMedium"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:gravity="start"
+                        android:layout_margin="5dp"
+                        android:textColorHint="#BDBDBD"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="10dp" />
+                </LinearLayout>
+        </ScrollView>
+
+
+
+
+</RelativeLayout>

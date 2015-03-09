@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/action_bar_color_light</item>
+        <item name="android:windowContentOverlay">@null</item> <!-- To remove shadow below action bar -->
+    </style>
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star</item>
+        <item name="android:indeterminateDrawable">@drawable/star</item>
+    </style>
+    <style name="viewpagertitlestrip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

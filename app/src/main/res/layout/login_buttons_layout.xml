@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@id/logo">
+
+
+    <LinearLayout
+        android:id="@+id/LoginBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If your friend has referred you,\n enter their referral code below, then we write the advantage"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="#ffffff" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="text"
+            android:hint="Enter code"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/field" />
+
+        <!--<com.facebook.widget.LoginButton-->
+        <!--android:id="@+id/fbLoginBtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+        <Button
+            android:id="@+id/fbLoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Login With Facebook"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_btn_fb"
+            android:textSize="@dimen/textSizeSmall"
+            android:drawableLeft="@drawable/fb"
+            android:paddingLeft="20dp"
+            android:drawablePadding="-20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/googlePlusBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Login With Google+"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_btn_gp"
+            android:textSize="@dimen/textSizeSmall"
+            android:drawableLeft="@drawable/google_plus"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="-20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="\@Login With Email"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeSmall"
+            android:background="@drawable/field"
+            android:textColor="#ffffff"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:drawablePadding="-20dp"
+            android:drawableRight="@drawable/next_new"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:id="@+id/skipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="I'll do it later"
+            android:background="@null"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</ScrollView>
